@@ -5,7 +5,7 @@ const config = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
   server: process.env.DB_SERVER,
-  port: process.env.DB_PORT,
+  port: parseInt(process.env.DB_PORT, 10),
   options: {
     encrypt: true, // Required for Azure SQL Database
   }
